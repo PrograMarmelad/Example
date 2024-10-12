@@ -8,9 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+private let helper = Helper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("View did load")
+        updateNumber()
+    }
+    private func updateNumber() {
+        helper.addNumber(Int.random(in: 0...10))
+        
+        for number in helper.getNumbers(){
+            print(number)
+        }
     }
 }
