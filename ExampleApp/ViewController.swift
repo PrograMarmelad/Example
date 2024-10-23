@@ -12,8 +12,10 @@ private let helper = Helper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .green
         updateNumber()
     }
+    
     private func updateNumber() {
         helper.addNumber(Int.random(in: 0...10))
         
